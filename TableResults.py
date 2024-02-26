@@ -8,7 +8,7 @@ def main():
     parser = argparse.ArgumentParser() 
 
     # method selection
-    parser.add_argument('--method', type=int, default=5,
+    parser.add_argument('--method', type=int, default=7,
                             help='Method you want to display its test result  \
                             (1 = social-lstm, 3 = vanilla-lstm, 4 = PV-collisionGrid, 5 = Linear-regression \
                              6 = P-collisionGrid, 7 = V-collisionGrid)') 
