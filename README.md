@@ -42,4 +42,6 @@ If you find this code useful in your research, please consider citing our paper:
 ```
 
 ## Acknowledgment
-
+This project is builds upon the codebase from [social-lstm](https://github.com/quancore/social-lstm),
+developed by "quancore" as a pytorch implementation of the Social LSTM model proposed by Alahi et al.
+The Social LSTM model itself is also used as a baseline for comparison with our propsed CollisionGrid model.
