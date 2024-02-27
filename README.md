@@ -14,10 +14,11 @@ Install pytorch version 2.2.1 using the instructions [here](https://pytorch.org/
 
 ## Overview
 
-describe the files
-
+This repository contains the code for our Polar Collision Grid model (`model_collisionGrid.py`), along with the baseline models used for comparison in our paper. These baselines consist of the Social LSTM model (with relevant python files in `model_SocialLSTM.py` and `grid.py`), the Vanilla LSTM model (`model_Vanilla_LSTM.py`), and the Linear Regression model (`LinearRegression.py`). The selection of the model for training and testing is determined by the `method` argument in both train.py and test.py.
 
 ## Dataset
+
+The HBS dataset, which includes trajectories of both pedestrians and vehicles collected from a shared space, is used for training and testing our data-driven trajectory prediction model. The initial dataset, stored as `hbs.csv` in the `Data` folder, undergoes preprocessing. This involves adapting it to a format compatible with our code, utilizing the functions available in the `datalader.py` file. Subsequently, the data is partitioned into train and test sets, which are already stored in the `Data` folder.
 
 ## Model training
 
