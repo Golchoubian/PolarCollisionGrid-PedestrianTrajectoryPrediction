@@ -34,7 +34,7 @@ Our Polar Collision Grid model, as well as any of the data-driven baseline model
 
 
 <div style="display: inline-block;">
-    <img src="https://github.com/Golchoubian/PolarCollisionGrid-PedestrianTrajectoryPrediction/blob/master/figure/loss_plot_epoch.png" alt="Related Info" width="500" hspace="50"> 
+    <img src="https://github.com/Golchoubian/PolarCollisionGrid-PedestrianTrajectoryPrediction/blob/master/figure/loss_plot_epoch.png" alt="Related Info" width="450" hspace="50"> 
 </div>
 
 ## Model evaluation
