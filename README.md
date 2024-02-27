@@ -4,8 +4,8 @@ This repository contains the code for our paper titled "Polar Collision Grids: E
 
 
 <div style="display: inline-block;">
-    <img src="https://github.com/Golchoubian/PolarCollisionGrid-PedestrianTrajectoryPrediction/blob/master/figure/RelatedInfo.png" alt="Related Info" width="300" hspace="50"> 
-   <img src="https://github.com/Golchoubian/PolarCollisionGrid-PedestrianTrajectoryPrediction/blob/master/figure/OveralFramework.png" alt="Overall Framework" width="500">
+    <img src="https://github.com/Golchoubian/PolarCollisionGrid-PedestrianTrajectoryPrediction/blob/master/figure/RelatedInfo.png" alt="Related Info" width="250" hspace="50"> 
+   <img src="https://github.com/Golchoubian/PolarCollisionGrid-PedestrianTrajectoryPrediction/blob/master/figure/OveralFramework.png" alt="Overall Framework" width="400">
 </div>
 
 
@@ -42,6 +42,11 @@ Our Polar Collision Grid model, as well as any of the data-driven baseline model
 Our trained models are stored in folders named relative to their corresponding models under the `Store_Results\model` directory. By executing the `test.py` script, the model saved in these directories will be loaded and tested on the test set. Depending on the chosen method, the `epoch` argument associated with the saved model in its folder should be adjusted. The terminal will display the performance of the saved model for the defined evaluation metrics, and the outputted trajectories for the test set will be saved as a `test_result.pkl` file in the `Store_Results/plot/test` directory.
 
 For the results reported in the paper, the test files are stored in the method's associated folder within the `Store_Results/plot/test` directory. These files can be utilized to run the `visualization.py` script and generate the table results in the paper by executing the `TableResults.py` file for the selected method.
+
+<div style="display: flex; justify-content: center;">
+  <img src="https://github.com/Golchoubian/PolarCollisionGrid-PedestrianTrajectoryPrediction/blob/master/figure/gif.gif" alt="GIF 1" width="500">
+</div>
+
 
 
 ## Visualization
