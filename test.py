@@ -41,8 +41,8 @@ def main():
 
     # Model to be loaded (saved model (the epoch #) during training
     # with the best performace according to previous invesigation on valiquation set)
-    parser.add_argument('--epoch', type=int, default=181,
-                            help='Epoch of model to be loaded')
+    parser.add_argument('--epoch', type=int, default=181, # PV-CollisionGrid: 181, SocialLSTM: 185, VanillaLSTM: 192,
+                            help='Epoch of model to be loaded') # oblation models:  V-CollisionGrid: 188, P-CollisionGrid: 172
     
     # The number of samples to be generated for each test data, when reporting its performance
     parser.add_argument('--sample_size', type=int, default=20,
