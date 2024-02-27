@@ -2,6 +2,14 @@
 
 This repository contains the code for our paper titled "Polar Collision Grids: Effective Interaction Modelling for Pedestrian Trajectory Prediction in Shared Space Using Collision Checks",  which was published and presented at ITSC 2023. The complete paper is accessible via the [IEEE portal](https://ieeexplore.ieee.org/abstract/document/10422509) or [ArXiv](https://arxiv.org/abs/2308.06654).
 
+
+<div style="display: inline-block;">
+    <img src="https://github.com/Golchoubian/PolarCollisionGrid-PedestrianTrajectoryPrediction/blob/master/figure/RelatedInfo.png" alt="Related Info" width="300" hspace="50"> 
+   <img src="https://github.com/Golchoubian/PolarCollisionGrid-PedestrianTrajectoryPrediction/blob/master/figure/OveralFramework.png" alt="Overall Framework" width="500">
+</div>
+
+
+
 ## Setup
 
 Create a conda environmnet using python version 3.9, and install the required python packages
@@ -22,7 +30,12 @@ The HBS dataset, which includes trajectories of both pedestrians and vehicles co
 
 ## Model training
 
-Our Polar Collision Grid model, as well as any of the data-driven baseline models (Social LSTM and Vanilla LSTM), can be trained for 200 epochs by executing the `train.py` file. A log file containing progress information during training will be stored under `Store_Results\log`. Following the completion of each epoch, the model will be saved in the `Store_Results\model` directory. Additionally, a plot illustrating the average displacement error and Negative Log Likelihood loss over epochs, and a more detailed one over batch numbers, will be saved in the `Store_Results\plot\train\` directory..  
+Our Polar Collision Grid model, as well as any of the data-driven baseline models (Social LSTM and Vanilla LSTM), can be trained for 200 epochs by executing the `train.py` file. A log file containing progress information during training will be stored under `Store_Results\log`. Following the completion of each epoch, the model will be saved in the `Store_Results\model` directory. Additionally, a plot illustrating the average displacement error and Negative Log Likelihood loss over epochs, and a more detailed one over batch numbers, will be saved in the `Store_Results\plot\train\` directory.
+
+
+<div style="display: inline-block;">
+    <img src="https://github.com/Golchoubian/PolarCollisionGrid-PedestrianTrajectoryPrediction/blob/master/figure/loss_plot_epoch.png" alt="Related Info" width="500" hspace="50"> 
+</div>
 
 ## Model evaluation
 
