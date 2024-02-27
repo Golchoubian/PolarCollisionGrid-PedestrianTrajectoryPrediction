@@ -14,7 +14,7 @@ Install pytorch version 2.2.1 using the instructions [here](https://pytorch.org/
 
 ## Overview
 
-This repository contains the code for our Polar Collision Grid model (`model_collisionGrid.py`), along with the baseline models used for comparison in our paper. These baselines consist of the Social LSTM model (with relevant python files in `model_SocialLSTM.py` and `grid.py`), the Vanilla LSTM model (`model_Vanilla_LSTM.py`), and the Linear Regression model (`LinearRegression.py`). The selection of the model for training and testing is determined by the `method` argument in both train.py and test.py.
+This repository contains the code for our Polar Collision Grid model (`model_collisionGrid.py`), along with the baseline models used for comparison in our paper. These baselines consist of the Social LSTM model (with relevant python files in `model_SocialLSTM.py` and `grid.py`), the Vanilla LSTM model (`model_Vanilla_LSTM.py`), and the Linear Regression model (`LinearRegression.py`). The selection of the method for training and testing is determined by the `method` argument in both train.py and test.py.
 
 ## Dataset
 
@@ -22,10 +22,17 @@ The HBS dataset, which includes trajectories of both pedestrians and vehicles co
 
 ## Model training
 
+Our Polar Collision Grid model, as well as any of the data-driven baseline models (Social LSTM and Vanilla LSTM), can be trained for 200 epochs by executing the `train.py` file. A log file containing progress information during training will be stored under `Store_Results\log`. Following the completion of each epoch, the model will be saved in the `Store_Results\model` directory. Additionally, a plot illustrating the average displacement error and Negative Log Likelihood loss over epochs, and a more detailed one over batch numbers, will be saved in the `Store_Results\plot\train\` directory..  
+
 ## Model evaluation
+
+Our trained models are stored in folders named relative to their corresponding models under the `Store_Results\model` directory. By executing the `test.py` script, the model saved in these directories will be loaded and tested on the test set. Depending on the chosen method, the `epoch` argument associated with the saved model in its folder should be adjusted. The terminal will display the performance of the saved model for the defined evaluation metrics, and the outputted trajectories for the test set will be saved as a `test_result.pkl` file in the `Store_Results/plot/test` directory.
+
+For the results reported in the paper, the test files are stored in the method's associated folder within the `Store_Results/plot/test` directory. These files can be utilized to run the `visualization.py` script and generate the table results in the paper by executing the `TableResults.py` file for the selected method.
 
 
 ## Visualization
+The predicted trajectories can be visualized for selected samples in the test set by running the `visualization.py` file. The resulting figures are stored in the `Store_Results\plot\test\plt\compare` directory.
 
 ## Citation
 
