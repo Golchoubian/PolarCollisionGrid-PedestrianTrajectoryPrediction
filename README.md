@@ -26,7 +26,7 @@ This repository contains the code for our Polar Collision Grid model (`model_col
 
 ## Dataset
 
-The HBS dataset, which includes trajectories of both pedestrians and vehicles collected from a shared space, is used for training and testing our data-driven trajectory prediction model. The initial dataset, stored as `hbs.csv` in the `Data` folder, undergoes preprocessing. This involves adapting it to a format compatible with our code, utilizing the functions available in the `datalader.py` file. Subsequently, the data is partitioned into train and test sets, which are already stored in the `Data` folder.
+The [HBS dataset](https://leopard.tu-braunschweig.de/receive/dbbs_mods_00069907), which includes trajectories of both pedestrians and vehicles collected from a shared space, is used for training and testing our data-driven trajectory prediction model. The initial dataset, stored as `hbs.csv` in the `Data` folder, undergoes preprocessing. This involves adapting it to a format compatible with our code, utilizing the functions available in the `datalader.py` file. Subsequently, the data is partitioned into train and test sets, which are already stored in the `Data` folder.
 
 ## Model training
 
