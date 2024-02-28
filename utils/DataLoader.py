@@ -643,8 +643,15 @@ class DataLoader():
         #array indices using a lookup table for each sequence -> speed
         #output: seq_lenght (real sequence lenght+1)*max_ped_id+1 (biggest id number in the sequence)*2 (x,y)
         
-        #get unique ids from sequence
-        unique_ids = pd.unique(np.concatenate(pedlist).ravel().tolist()).astype(int)
+        # #get unique ids from sequence
+        # unique_ids = pd.unique(np.concatenate(pedlist).ravel().tolist()).astype(int)
+        # addresing the future warning I get with the previous line:
+        concatenated_data = np.concatenate(pedlist).ravel().tolist()
+        # Convert to Pandas Series
+        concatenated_series = pd.Series(concatenated_data)
+        # Use pd.unique on the Pandas Series
+        unique_ids = pd.unique(concatenated_series).astype(int)
+
         # create a lookup table which maps ped ids -> array indices
         lookup_table = dict(zip(unique_ids, range(0, len(unique_ids))))
 
