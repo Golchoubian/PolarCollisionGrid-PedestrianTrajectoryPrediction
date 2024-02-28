@@ -8,8 +8,8 @@ from torch.autograd import Variable
 import torch
 import random
 
-from grid import getSequenceGridMask, getSequenceGridMask_heterogeneous 
-from Interaction import getInteractionGridMask, getSequenceInteractionGridMask
+from utils.grid import getSequenceGridMask, getSequenceGridMask_heterogeneous 
+from utils.Interaction import getInteractionGridMask, getSequenceInteractionGridMask
 
 class DataLoader():
 

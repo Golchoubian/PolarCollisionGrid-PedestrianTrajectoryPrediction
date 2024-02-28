@@ -1,9 +1,9 @@
 
 import torch
 import numpy as np
-from model_CollisionGrid import CollisionGridModel
-from model_SocialLSTM import SocialModel
-from model_VanillaLSTM import VLSTMModel
+from model.model_CollisionGrid import CollisionGridModel
+from model.model_SocialLSTM import SocialModel
+from model.model_VanillaLSTM import VLSTMModel
 from torch.autograd import Variable
 import math
 import itertools
