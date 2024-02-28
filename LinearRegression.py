@@ -3,8 +3,8 @@ import os
 import time 
 import torch
 from torch.autograd import Variable
-from DataLoader import DataLoader
-from helper import * 
+from utils.DataLoader import DataLoader
+from utils.helper import * 
 from sklearn.linear_model import LinearRegression
 
 def main():

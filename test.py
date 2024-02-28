@@ -6,11 +6,11 @@ import time
 import torch
 from torch.autograd import Variable
 
-from DataLoader import DataLoader
-from grid import getSequenceGridMask, getGridMask, getSequenceGridMask_heterogeneous, getGridMask_heterogeneous
-from Interaction import getInteractionGridMask, getSequenceInteractionGridMask
-from helper import * # want to use its get_model()
-from helper import sample_gaussian_2d
+from utils.DataLoader import DataLoader
+from utils.grid import getSequenceGridMask, getGridMask, getSequenceGridMask_heterogeneous, getGridMask_heterogeneous
+from utils.Interaction import getInteractionGridMask, getSequenceInteractionGridMask
+from utils.helper import * # want to use its get_model()
+# from utils.helper import sample_gaussian_2d
 from matplotlib import pyplot as plt
 
 def main():
@@ -95,7 +95,7 @@ def main():
     smallest_err_iter_num = -1
 
     # Use "range(0, sample_args.iteration):" when willing to find the best model during training
-    # in that case uncomment line 101 and comment line 102
+    # in that case uncomment line 109 and comment line 110
     # This iteration is for testing the results for different stages of the trained model
     # (the stored paramters of the model at different iterations)
     for iteration in [0]: # range(0, sample_args.iteration): 

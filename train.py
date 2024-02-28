@@ -1,8 +1,8 @@
 import torch 
-from DataLoader import DataLoader
-from helper import *
-from grid import getSequenceGridMask, getSequenceGridMask_heterogeneous 
-from Interaction import getInteractionGridMask, getSequenceInteractionGridMask
+from utils.DataLoader import DataLoader
+from utils.helper import *
+from utils.grid import getSequenceGridMask, getSequenceGridMask_heterogeneous 
+from utils.Interaction import getInteractionGridMask, getSequenceInteractionGridMask
 from torch.autograd import Variable
 import time
 import argparse
