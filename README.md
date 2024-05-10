@@ -16,7 +16,7 @@ Create a virtual environmnet using python version 3.9, and install the required 
 ```bash
 pip install -r requirements.txt
 ```
-Install pytorch version 2.2.1 using the instructions [here](https://pytorch.org/get-started/locally/)
+Install pytorch version 2.2.1 using the instructions [here](https://pytorch.org/get-started/previous-versions/#v221)
 
 ## Overview
 
