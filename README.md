@@ -12,10 +12,8 @@ This repository contains the code for our paper titled "Polar Collision Grids: E
 
 ## Setup
 
-Create a conda environmnet using python version 3.9, and install the required python packages
+Create a virtual environmnet using python version 3.9, and install the required python packages
 ```bash
-conda create --name PCG python=3.9
-conda activate PCG
 pip install -r requirements.txt
 ```
 Install pytorch version 2.2.1 using the instructions [here](https://pytorch.org/get-started/locally/)
